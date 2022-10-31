@@ -57,10 +57,13 @@ spec:
           terminationMessagePath: /dev/termination-log
           name: git-sync
           command:
-            - /git-sync
+            - sh
+            - -c
+          args:
+            - export http_proxy=http://10.7.1.239:8080 && export https_proxy=http://10.7.1.239:8080 && /git-sync
           env:
             - name: GIT_SYNC_REPO
-              value: 'https://github.com/airflow-dags/dags'
+              value: 'https://github.com/qsol-dohi/dags'
             - name: GIT_SYNC_DEST
               value: gitdags
             - name: GIT_SYNC_BRANCH

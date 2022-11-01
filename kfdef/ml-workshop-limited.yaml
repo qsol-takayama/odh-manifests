@@ -124,7 +124,7 @@ spec:
     - name: kf-manifests
       uri: https://github.com/kubeflow/manifests/archive/v1.2-branch.tar.gz
     - name: manifests
-      uri: https://github.com/masoodfaisal/odh-manifests/tarball/disconnected-install
+      uri: https://github.com/qsol-dohi/odh-manifests/tarball/disconnected-install
   version: disconnected-install
 
 

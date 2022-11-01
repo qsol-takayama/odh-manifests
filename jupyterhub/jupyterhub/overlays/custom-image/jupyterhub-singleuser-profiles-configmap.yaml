@@ -56,8 +56,12 @@ data:
               master_nodes: '1'
               master_memory_limit: '2Gi'
               master_cpu_limit: '1'
+              master_memory_request: '0.5Gi'
+              master_cpu_request: '0.5'
               worker_memory_limit: '2Gi'
               worker_cpu_limit: '1'
+              worker_memory_request: '0.5Gi'
+              worker_cpu_request: '0.5'
               spark_image: quay.io/ml-on-k8s/spark:3.0.0
             return:
               SPARK_CLUSTER: 'metadata.name'

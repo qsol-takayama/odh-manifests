@@ -18,9 +18,6 @@ spec:
       labels:
         name: supersetdb
     spec:
-      securityContext:
-        fsGroup: 26
-        runAsUser: 26
       containers:
       - name: postgresql
         image: "quay.io/internaldatahub/postgresql-96-centos7:9.6"

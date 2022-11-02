@@ -34,9 +34,6 @@ spec:
     spec:
 
       priorityClassName: ""
-#      securityContext:
-#        fsGroup: 1001
-      # serviceAccountName: default
       affinity:
         podAffinity:
 

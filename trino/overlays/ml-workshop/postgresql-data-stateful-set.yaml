@@ -35,9 +35,6 @@ spec:
       labels:
         app: customerdatadb
     spec:
-      securityContext:
-        fsGroup: 26
-        runAsUser: 26
       containers:
         - name: customerdatadb-postgresql
           image: quay.io/internaldatahub/postgresql-96-centos7:9.6

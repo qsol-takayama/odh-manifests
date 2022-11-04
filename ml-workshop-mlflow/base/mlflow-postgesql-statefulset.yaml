@@ -57,6 +57,9 @@ spec:
       #       - name: mlflow-db-data
       #         mountPath: /bitnami/postgresql
       # #              subPath:
+      securityContext:
+        fsGroup: 26
+        runAsUser: 26
 
       containers:
         - name: mlflow-db-postgresql

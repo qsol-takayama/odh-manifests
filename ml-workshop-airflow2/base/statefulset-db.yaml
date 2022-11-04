@@ -51,6 +51,8 @@ spec:
               weight: 1
         nodeAffinity:
 
+      # securityContext:
+      #   fsGroup: 1001
       automountServiceAccountToken: false
       # initContainers:
       #   - name: init-chmod-data
@@ -71,6 +73,9 @@ spec:
       #     volumeMounts:
       #       - name: aflow-data
       #         mountPath: /bitnami/postgresql
+      securityContext:
+        fsGroup: 26
+        runAsUser: 26
 
       containers:
         - name: app-aflow-postgresql

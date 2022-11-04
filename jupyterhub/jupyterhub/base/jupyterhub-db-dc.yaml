@@ -20,6 +20,10 @@ spec:
         opendatahub.io/component: 'true'
       annotations:
         sidecar.istio.io/inject: "true"
+    spec:
+      securityContext:
+        fsGroup: 26
+        runAsUser: 26
 
       containers:
       - image: registry.redhat.io/rhel8/postgresql-10:1-154

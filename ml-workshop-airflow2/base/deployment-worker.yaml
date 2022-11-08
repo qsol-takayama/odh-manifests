@@ -63,10 +63,11 @@ spec:
             - sh
             - -c
             - |
-              export HTTP_PROXY=http://10.3.1.239:8080
-              export HTTPS_PROXY=http://10.3.1.239:8080
+              export HTTP_PROXY=http://10.7.1.239:8080
+              export HTTPS_PROXY=http://10.7.1.239:8080
               git config --global http.proxy http://10.7.1.239:8080
               git config --global https.proxy http://10.7.1.239:8080
+              git config --global http.sslVerify false
               /git-sync
           env:
             - name: GIT_SYNC_REPO

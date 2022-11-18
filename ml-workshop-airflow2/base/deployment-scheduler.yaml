@@ -57,13 +57,7 @@ spec:
           terminationMessagePath: /dev/termination-log
           name: git-sync
           command:
-            - sh
-            - -c
-            - |
-              git config --global http.proxy http://10.7.1.239:8080
-              git config --global https.proxy http://10.7.1.239:8080
-              git config --global http.sslVerify false
-              /git-sync
+            - /git-sync
           env:
             - name: GIT_SYNC_REPO
               value: 'https://github.com/qsol-dohi/dags'
@@ -78,12 +72,6 @@ spec:
             - name: GIT_SYNC_REV
             - name: HOME
               value: /tmp
-            - name: HTTP_PROXY
-              value: http://10.7.1.239:8080
-            - name: HTTPS_PROXY
-              value: http://10.7.1.239:8080
-            - name: GIT_SYNC_SUBMODULES
-              value: 'off'
           ports:
             - name: gitsync
               containerPort: 2020

@@ -81,6 +81,8 @@ spec:
             - name: GIT_SYNC_REV
             - name: HOME
               value: /tmp
+            - name: CURL_CA_BUNDLE
+              value: ''
           ports:
             - name: gitsync
               protocol: TCP

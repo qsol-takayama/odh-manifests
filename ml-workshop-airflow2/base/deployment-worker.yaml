@@ -140,6 +140,8 @@ spec:
               value: "8080"
             - name: AIRFLOW__WEBSERVER__SECRET_KEY
               value: "IKnowWhatYouDidLastYear"
+            - name: CURL_CA_BUNDLE
+              value: ''
 
           envFrom:
           ports:

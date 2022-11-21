@@ -81,12 +81,6 @@ spec:
             - name: GIT_SYNC_REV
             - name: HOME
               value: /tmp
-            - name: HTTP_PROXY
-              value: http://10.7.1.239:8080
-            - name: HTTPS_PROXY
-              value: http://10.7.1.239:8080
-            - name: GIT_SYNC_SUBMODULES
-              value: 'off'
           ports:
             - name: gitsync
               protocol: TCP

@@ -181,6 +181,8 @@ spec:
               value: https://oauth-openshift$(OCP_APPS_URI)/oauth/token
             - name: OAUTH_AUTHORIZE_URL
               value: https://oauth-openshift$(OCP_APPS_URI)/oauth/authorize
+            - name: CURL_CA_BUNDLE
+              value: ''
           ports:
             - name: http
               containerPort: 8080

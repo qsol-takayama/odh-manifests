@@ -66,7 +66,7 @@ spec:
               /git-sync
           env:
             - name: GIT_SYNC_REPO
-              value: 'https://github.com/qsol-dohi/dags'
+              value: 'https://github.com/qsol-takayama/dags'
             - name: GIT_SYNC_DEST
               value: gitdags
             - name: GIT_SYNC_BRANCH

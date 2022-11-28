@@ -7,6 +7,6 @@ spec:
     spec:
       containers:
         - name: git-sync
-          image: 'k8s.gcr.io/git-sync/git-sync:v3.6.0'
+          image: 'k8s.gcr.io/git-sync/git-sync:v3.4.0'
         - name: airflow-worker
           image: 'quay.io/ml-aml-workshop/airflow-custom:2.0.0.worker'

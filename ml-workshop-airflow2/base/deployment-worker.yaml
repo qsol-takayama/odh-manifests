@@ -60,13 +60,7 @@ spec:
           terminationMessagePath: /dev/termination-log
           name: git-sync
           command:
-            - sh
-            - -c
-            - |
-              git config --global http.proxy http://10.7.1.239:8080
-              git config --global https.proxy http://10.7.1.239:8080
-              git config --global http.sslVerify false
-              /git-sync
+            - /git-sync
           env:
             - name: GIT_SYNC_REPO
               value: 'https://github.com/qsol-takayama/dags'
